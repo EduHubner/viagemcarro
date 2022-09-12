@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--Comece Por Aqui para entender o codigo-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="js.js"></script>
+    <script src="funcoes.js"></script>
     <title>Viagem de Carro</title>
 </head>
 <body>
-    <form style="text-align:center;">
-        <h1>Cadastro</h1>
+    <form style="text-align:center;" method="post">
+        <h1>Cadastro</h1><!--Pede as informações da viagem-->
         <hr>
         Modelo: <input type="text" id="modelo" required>
         <hr>
@@ -25,15 +25,15 @@
         <hr>
         KM/Percorridos: <input type="text" id="percorrido"required>
         <hr>
-        Litros/Usados: <input type="text" id="ltr"required>
+        Litros/Usados: <input type="text" id="Litros"required>
         <hr>
         Valor Gasolina: <input type="text" id="valor"required>
         <hr>
-        <input type="button" id="gravar" value="Gravar">
-        <input type="reset" value="Apagar">
+        <input type="button" id="gravar" value="Gravar"><!--Salva as informações passadas, usando o POST-->
+        <input type="reset" value="Apagar"> <!--Apaga as informações já escritas-->
     </form>
 
-    <div id="resp"></div>
+    <div id="resp"></div><!--Locas onde é listado as viagens-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
